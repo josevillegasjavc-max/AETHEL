@@ -31,12 +31,12 @@
     align-items: center;
     padding: 0.9rem;
     margin: 0;
-    list-style: none;
 } 
 
 .itemNav {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .itemNav a{
