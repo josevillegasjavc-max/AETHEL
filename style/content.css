@@ -8,7 +8,6 @@
     justify-content: space-between;
 }
 
-
 /* Seccion de informacion inicial*/
 .information {
     margin: 5rem 8rem;
@@ -77,7 +76,6 @@
     animation: spawnD 0.6s ease-in-out normal forwards;
 }
 
-
 /* Seccion de caracteristicas de la clinica para hacerla mas atractiva*/
 .containCaract {
     display: flex;
@@ -122,6 +120,7 @@
 
     background: var(--bg-color);
     border-radius: 50%;
+    user-select: none;
 }
 
 .containImg img{
