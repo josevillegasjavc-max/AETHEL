@@ -1,7 +1,6 @@
 .containInformation {
     background: var(--bg-color);
-    box-shadow: var(--shadow-md);
-    margin-bottom: 50rem;
+    margin-bottom: 4rem;
     height: 55rem;
 
     display: flex;
@@ -66,13 +65,10 @@
     width: 42%;
 
     box-shadow: var(--shadow-md);
-    border-radius: 3rem 0 0 3rem;
+    border-radius: 2rem 0 0 2rem;
+
+    animation: spawnD 0.6s ease-in-out normal forwards;
 }
-
-
-
-
-
 
 
 
@@ -80,23 +76,19 @@
 .slider {
     height: 35rem;
     width: 100%;
+
     padding: 2rem;
+    margin-bottom: 4rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 
-    background: -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-light));
-    border-top: 2px solid rgba(0, 0, 0, 0.123);
-    border: 2px solid rgba(0, 0, 0, 0.123);
+    background: -webkit-linear-gradient(100deg, var(--primary-dark) 0%, var(--primary-light) 60%);
 }
 
 .card {
-    border:  1px solid rgba(0, 0, 0, 0.205);
     height: 90%;
     width: 16%;
-
-    box-shadow: var(--shadow-md);
-    border-radius: var(--radius);
 }
