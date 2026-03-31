@@ -1,6 +1,6 @@
 .containInformation {
     background: var(--bg-color);
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     min-height: 55rem;
 
     display: flex;
@@ -167,31 +167,37 @@
     border-radius: 5rem;
     height: 90%;
     width: 70%;
+
 }
 
 .slider .card1 {
     background: url("../resource/promos/promo1.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slider .card2 {
     background: url("../resource/promos/promo2.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slider .card3 {
     background: url("../resource/promos/promo3.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .slider .card4 {
     background: url("../resource/promos/promo4.png");
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slider .card5 {
-    background: url("../resource/promos/promo4.png");
-    background-size: contain;
+    background: url("../resource/promos/promo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .containButton {
@@ -229,8 +235,9 @@
 .sectionPanel {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 2rem;
 
-    padding: 1rem;
+    padding: 0 1rem;
     gap: 2rem;
 }
 
@@ -241,8 +248,8 @@
     padding: 0.7rem 2rem;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     transition: all 0.3s ease-in-out;
 }
 
@@ -260,32 +267,24 @@
 
 .itemCard:first-child {
     background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
-    border: none;
     text-align: center;
+    border: none;
 }
 
 .itemCard:first-child .titleItem{
     color: var(--bg-color);
+    letter-spacing: 0.2rem;
+    margin-top: 1.2rem;
+    font-size: 2rem;
 }
 
 .itemCard:hover {
     box-shadow: var(--shadow-sm);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.itemImg {
+    width: 6rem;
+}
 
 .active {
     opacity: 1;
