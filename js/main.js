@@ -23,6 +23,9 @@ infoSection.forEach(section => observer.observe(section));
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => observer.observe(card));
 
+const sectionPanel = document.querySelector('.sectionPanel');
+observer.observe(sectionPanel); // Directo, sin vueltas.
+
 /* Slider animation */
 const buttonN = document.querySelector('.next');
 const buttonP = document.querySelector('.prev');

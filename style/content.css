@@ -158,7 +158,7 @@
     justify-content: center;
 
     gap: 6rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .sliderCard {
@@ -239,6 +239,10 @@
 
     padding: 0 1rem;
     gap: 2rem;
+
+    opacity: 0;
+    transform: translateY(19px);
+    transition: all 0.6s ease-out;
 }
 
 .itemCard {
