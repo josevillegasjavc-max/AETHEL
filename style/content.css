@@ -97,7 +97,6 @@
 }
 
 .card {
-    border: 2px solid rgba(0, 0, 0, 0);
     height: 80%;
     width: 16%;
 
@@ -112,7 +111,6 @@
 }
 
 .containImg{
-    border: 2px solid rgba(0, 0, 0, 0);
     height: 50%;
     width: 62%;
     margin: 0.5rem auto;
@@ -123,7 +121,6 @@
 }
 
 .containImg img{
-    border: 2px solid rgba(0, 0, 0, 0);
     height: 66%;
     margin: 1.5rem auto;
 }
@@ -142,11 +139,7 @@
     margin: 0;
 }
 
-.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/* Slider para promocionar diversos sitos de la pagina */
 .containSlider {
     width: 100%;       
     display: flex;
@@ -196,6 +189,10 @@
     background-size: contain;
 }
 
+.slider .card5 {
+    background: url("../resource/promos/promo4.png");
+    background-size: contain;
+}
 
 .containButton {
     display: flex;
@@ -226,4 +223,56 @@
 .containButton button:hover {
     box-shadow: var(--shadow-sm);
     opacity: 0.9;
+}
+
+/* Seccion de un panel para navegar */
+.sectionPanel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.itemCard {
+    border: 2px solid rgba(68, 68, 68, 0.267);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius);
+    padding: 0.7rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titleItem {
+    margin: 0.4rem 0;
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+}
+
+.textItem {
+    margin: 0.7rem 0;
+    font-size: 1.5rem;
+    color: var(--text-main);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.active {
+    opacity: 1;
+    transform: translateY(0);
 }

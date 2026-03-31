@@ -20,17 +20,17 @@ const observer = new IntersectionObserver((entries) => {
 const infoSection = document.querySelectorAll('.information');
 infoSection.forEach(section => observer.observe(section));
 
-// Seleccionamos específicamente tus tarjetas
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => observer.observe(card));
 
-
+/* Slider animation */
 const buttonN = document.querySelector('.next');
 const buttonP = document.querySelector('.prev');
 const slider = document.querySelector('.slider');
 
 buttonN.addEventListener('click', () => {
     // 1. Añadimos la transición para que se vea el movimiento
+    buttonN.disabled = true;
     slider.style.transition = "transform 0.7s ease-in-out";
     
     // 2. Movemos el slider una posición a la izquierda
@@ -49,11 +49,13 @@ buttonN.addEventListener('click', () => {
         // Reseteamos la posición del slider al inicio instantáneamente
         // Como movimos la tarjeta al final, visualmente parece que no pasó nada
         slider.style.transform = `translateX(0)`;
+        buttonN.disabled = false;
     }, 700); 
 });
 
 buttonP.addEventListener('click', () => {
     // 1. Antes de mover, pasamos la ÚLTIMA tarjeta al PRINCIPIO
+    buttonP.disabled = true;
     const lastCard = slider.lastElementChild;
     slider.prepend(lastCard);
     
@@ -66,5 +68,8 @@ buttonP.addEventListener('click', () => {
     setTimeout(() => {
         slider.style.transition = "transform 0.7s ease-in-out";
         slider.style.transform = `translateX(0)`;
+        setTimeout(() => {
+            buttonP.disabled = false;
+        }, 700);
     }, 1);
 });
