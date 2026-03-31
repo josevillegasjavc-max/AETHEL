@@ -243,6 +243,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .titleItem {
@@ -255,6 +256,20 @@
     margin: 0.7rem 0;
     font-size: 1.5rem;
     color: var(--text-main);
+}
+
+.itemCard:first-child {
+    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
+    border: none;
+    text-align: center;
+}
+
+.itemCard:first-child .titleItem{
+    color: var(--bg-color);
+}
+
+.itemCard:hover {
+    box-shadow: var(--shadow-sm);
 }
 
 
