@@ -23,3 +23,48 @@ infoSection.forEach(section => observer.observe(section));
 // Seleccionamos específicamente tus tarjetas
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => observer.observe(card));
+
+
+const buttonN = document.querySelector('.next');
+const buttonP = document.querySelector('.prev');
+const slider = document.querySelector('.slider');
+
+buttonN.addEventListener('click', () => {
+    // 1. Añadimos la transición para que se vea el movimiento
+    slider.style.transition = "transform 0.7s ease-in-out";
+    
+    // 2. Movemos el slider una posición a la izquierda
+    // Usamos el ancho de una tarjeta + el gap (aprox 20.3%)
+    slider.style.transform = `translateX(-20.3%)`;
+
+    // 3. Esperamos a que termine la animación (0.7s = 700ms)
+    setTimeout(() => {
+        // Quitamos la transición para que el reordenamiento sea invisible
+        slider.style.transition = "none";
+        
+        // TOMAMOS LA PRIMERA TARJETA Y LA MANDAMOS AL FINAL
+        const firstCard = slider.firstElementChild;
+        slider.appendChild(firstCard);
+        
+        // Reseteamos la posición del slider al inicio instantáneamente
+        // Como movimos la tarjeta al final, visualmente parece que no pasó nada
+        slider.style.transform = `translateX(0)`;
+    }, 700); 
+});
+
+buttonP.addEventListener('click', () => {
+    // 1. Antes de mover, pasamos la ÚLTIMA tarjeta al PRINCIPIO
+    const lastCard = slider.lastElementChild;
+    slider.prepend(lastCard);
+    
+    // 2. Movemos el slider instantáneamente a la izquierda (sin que se note)
+    slider.style.transition = "none";
+    slider.style.transform = `translateX(-20.3%)`;
+    
+    // 3. Usamos un setTimeout de 1ms para que el navegador registre el cambio
+    // y luego animamos hacia el 0
+    setTimeout(() => {
+        slider.style.transition = "transform 0.7s ease-in-out";
+        slider.style.transform = `translateX(0)`;
+    }, 1);
+});

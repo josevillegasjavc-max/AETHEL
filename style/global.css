@@ -8,7 +8,7 @@
 html {   
     font-family: sans-serif;
     font-size: 62.5%;
-    
+
     scroll-behavior: smooth;    
     scrollbar-width: none;
 }
@@ -20,7 +20,6 @@ html {
     --aethel-green: #2d7a5e;        /* El verde de tu logo */
     --soft-wood: #d2b48c;           /* Tono madera clara */
     --earth-sand: #e8dcc4;          /* Tono tierra/arena */
-    --medical-white: #f9f8f6;       /* Blanco cálido */
 
     /* Colores Neutros (Interfaz y Texto) */
     --bg-color: #f1f1f1fb;                  /* Fondo gris muy claro (casi blanco) */
@@ -31,8 +30,6 @@ html {
     /* Colores de Estado */
     --success: #0ef162;
     --error: #ef4444;
-    --glass-bg: rgba(255, 255, 255, 0.7);       
-    --glass-border: rgba(255, 255, 255, 0.3);
 
     /* Sombras y Bordes */
     --shadow-md: 0 0.1rem 1.5rem rgba(117, 117, 117, 0.658); /* Sombra clara */
@@ -55,9 +52,9 @@ html {
 
 body {   
     background: var(--bg-color);
+    color: var(--text-main);
     padding: 0;
     margin: 0;
-    color: var(--text-main);
 }
 
 a {
@@ -78,10 +75,6 @@ main {
         opacity: 1;
         transform: translateY(0px);
     }
-}
-
-.animationSpawn {
-    animation: spawn 0.7s ease-in-out normal forwards;
 }
 
 @keyframes spawnD {
