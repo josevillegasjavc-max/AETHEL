@@ -20,11 +20,15 @@ const observer = new IntersectionObserver((entries) => {
 const infoSection = document.querySelectorAll('.information');
 infoSection.forEach(section => observer.observe(section));
 
+const imgSection = document.querySelector('.imgInformation ');
+observer.observe(imgSection);
+
 const caract = document.querySelectorAll('.caract');
 caract.forEach(card => observer.observe(card));
 
 const sectionPanel = document.querySelector('.sectionPanel');
 observer.observe(sectionPanel); // Directo, sin vueltas.
+
 
 /* Slider animation */
 const buttonN = document.querySelector('.next');

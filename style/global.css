@@ -17,7 +17,7 @@
     --radius: 1.6rem;      
     
     --header-height: 7rem;
-    --border: 2px solid rgba(0, 0, 0, 0);
+    --border: 2px solid rgba(0, 0, 0, 0.61);
 }
 
 * {

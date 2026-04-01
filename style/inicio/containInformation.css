@@ -3,7 +3,7 @@
     justify-content: space-between;
 
     background: var(--bg-color);
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
 
     width: 100%;
     height: auto;
@@ -74,7 +74,9 @@
     border-radius: 3rem 0 0 3rem;
     border: 2px solid var(--earth-sand);
 
-    animation: spawnD 0.6s ease-in-out normal forwards;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.9s ease-out;
 }
 
 /* Seccion de caracteristicas de la clinica para hacerla mas atractiva*/
@@ -128,7 +130,7 @@
     font-size: 2.2rem;
 }
 
-
+/* Seccion de panel para navegacion en medio de la web */
 .sectionPanel {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -137,7 +139,9 @@
     padding: 0 1rem;
     gap: 2rem;
 
-    transition: all 0.6s ease-out;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.9s ease-out;
 }
 
 .itemCard {
