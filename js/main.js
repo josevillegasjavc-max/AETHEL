@@ -20,8 +20,8 @@ const observer = new IntersectionObserver((entries) => {
 const infoSection = document.querySelectorAll('.information');
 infoSection.forEach(section => observer.observe(section));
 
-const cards = document.querySelectorAll('.card');
-cards.forEach(card => observer.observe(card));
+const caract = document.querySelectorAll('.caract');
+caract.forEach(card => observer.observe(card));
 
 const sectionPanel = document.querySelector('.sectionPanel');
 observer.observe(sectionPanel); // Directo, sin vueltas.

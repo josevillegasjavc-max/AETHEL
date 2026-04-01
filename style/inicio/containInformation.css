@@ -1,0 +1,185 @@
+.containInformation {
+    display: flex;
+    justify-content: space-between;
+
+    background: var(--bg-color);
+    margin-bottom: 5rem;
+
+    width: 100%;
+    height: auto;
+    min-height: 55rem;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 60%;
+    height: auto;
+    padding: 3.5rem;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+    gap: 0.8rem;
+}
+
+.spanTitle {
+    color: var(--primary-dark);
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.title {
+    background: 
+    -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-light));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    font-size: 6rem;
+}
+
+.text {
+    font-size: 1.9rem;
+    width: 90%;
+}
+
+.buttonC {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    color: var(--bg-color);
+    margin: 2rem 0 0 2rem;
+    width: max-content;
+    font-size: 2rem;
+
+    background: -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-light));
+
+    padding: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttonC:hover {
+    background: -webkit-repeating-linear-gradient(var(--primary-light), var(--primary-light));
+    box-shadow: var(--shadow-sm);
+    transform: scale(1.05);
+}
+
+.imgInformation {
+    width: 40%;
+    object-fit: cover;
+
+    box-shadow: var(--shadow-md);
+    border-radius: 3rem 0 0 3rem;
+    border: 2px solid var(--earth-sand);
+
+    animation: spawnD 0.6s ease-in-out normal forwards;
+}
+
+/* Seccion de caracteristicas de la clinica para hacerla mas atractiva*/
+.containCaract {
+    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
+    box-shadow: var(--shadow-sm);
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+
+    width: 100%;
+    height: auto;
+    min-height: 34rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.caract {
+    max-width: 21%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+
+    color: var(--bg-color);
+    padding: 1rem;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.containImg{
+    background: var(--bg-color);
+    border-radius: 50%;
+    user-select: none;
+    padding: 1.9rem;
+}
+
+.caract h2{
+    font-size: 3rem;
+}
+
+.caract p {
+    font-size: 2.2rem;
+}
+
+
+.sectionPanel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    gap: 2rem;
+
+    transition: all 0.6s ease-out;
+}
+
+.itemCard {
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius);
+    padding: 0.7rem 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.titleItem {
+    margin: 0.4rem 0;
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+}
+
+.textItem {
+    margin: 0.7rem 0;
+    font-size: 1.5rem;
+    color: var(--text-main);
+}
+
+.itemCard:first-child {
+    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
+    text-align: center;
+    border: none;
+}
+
+.itemCard:first-child .titleItem{
+    color: var(--bg-color);
+    letter-spacing: 0.2rem;
+    margin-top: 1.2rem;
+    font-size: 2rem;
+}
+
+.itemCard:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.itemImg {
+    width: 5rem;
+}

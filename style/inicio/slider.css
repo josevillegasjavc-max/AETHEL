@@ -1,0 +1,89 @@
+.containSlider {
+    width: 100%;       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.slider {
+    width: 400%;
+    height: 36rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6rem;
+    margin-bottom: 2rem;
+}
+
+.sliderCard {
+    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
+    box-shadow: var(--shadow-md);
+    border-radius: 5rem;
+    height: 90%;
+    width: 70%;
+}
+
+.slider .card1 {
+    background: url("/resource/promos/promo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .card2 {
+    background: url("/resource/promos/promo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .card3 {
+    background: url("/resource/promos/promo3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .card4 {
+    background: url("/resource/promos/promo5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .card5 {
+    background: url("/resource/promos/promo4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+
+    width: 90%;
+    height: 12rem;
+    margin-bottom: 4rem;
+}
+
+.containButton button {
+    width: 5.5rem;
+    height: 5.2rem;
+    outline: none;
+    border-radius: 45%;
+    
+    box-shadow: var(--shadow-md);
+    color: var(--primary-dark);
+    font-size: 3rem;
+    padding: 1rem;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+
+.containButton button:hover {
+    box-shadow: var(--shadow-sm);
+    opacity: 0.9;
+}
