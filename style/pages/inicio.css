@@ -51,7 +51,7 @@
     object-fit: cover;
 
     box-shadow: var(--shadow-md);
-    border-radius: 3rem 0 0 3rem;
+    border-radius: 3rem;
     border: 2px solid var(--earth-sand);
 
     opacity: 0;
@@ -70,11 +70,17 @@
     justify-content: center;
     gap: 12rem;
 
-    width: 100%;
     height: auto;
     min-height: 34rem;
 
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
+
+    width: 100vw; 
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .caract {
@@ -115,7 +121,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 0 1rem;
     gap: 2rem;
 
@@ -165,4 +171,27 @@
     color: var(--bg-color);
     letter-spacing: 0.2rem;
     font-size: 2rem;
+}
+
+.informationEspecialistas {
+    align-items: center;
+    min-height: 50rem;
+    height: fit-content;
+}
+
+.informationEspecialistas .information{
+    width: 54%;
+    padding: 0 5rem;
+    max-height: 55rem;
+}
+
+.informationEspecialistas .information .title {
+    margin-bottom: 3rem;
+}
+
+.informationEspecialistas .imgInformation {
+    width: 46%;
+    aspect-ratio: 14 / 10; 
+    margin-left: 2%;
+    object-position: top center; 
 }

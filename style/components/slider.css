@@ -1,10 +1,18 @@
 .containSlider {
-    width: 100%;       
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    margin-bottom: 1.5rem;
+
+
+    width: 100vw; /* Usamos viewport width para asegurar que toque los bordes */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .slider {
@@ -16,7 +24,6 @@
     justify-content: center;
 
     gap: 6rem;
-    margin-bottom: 2rem;
 }
 
 .sliderCard {
@@ -48,8 +55,9 @@
 }
 
 .card1, .card2 , .card3 , .card4 , .card5{
+    background-size: cover;  
+    background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .containButton {
@@ -76,6 +84,8 @@
     border: none;
     transition: all 0.2s ease-in-out;
     z-index: 2;
+
+    margin-top: 2.5rem;
 }
 
 .containButton button:hover {

@@ -16,3 +16,12 @@
     opacity: 1;
     transform: translate(0);
 }
+
+.main-container {
+    width: 100%;           /* En pantallas pequeñas ocupa todo */
+    max-width: 1600px;     /* ¡ESTO ES LO IMPORTANTE! No crecerá más de aquí */
+    margin: 0 auto;        /* Centra el "cajón" en la pantalla */
+    
+    display: flex;
+    flex-direction: column;
+}

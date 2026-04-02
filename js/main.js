@@ -20,8 +20,8 @@ const observer = new IntersectionObserver((entries) => {
 const infoSection = document.querySelectorAll('.information');
 infoSection.forEach(section => observer.observe(section));
 
-const imgSection = document.querySelector('.imgInformation ');
-observer.observe(imgSection);
+const imgSection = document.querySelectorAll('.imgInformation');
+imgSection.forEach(imga => observer.observe(imga));
 
 const caract = document.querySelectorAll('.caract');
 caract.forEach(card => observer.observe(card));
