@@ -28,23 +28,23 @@
 }
 
 .card1 {
-    background: url("/resource/promos/promo1.png");
+    background: url("./resource/promos/promo1.png");
 }
 
 .card2 {
-    background: url("/resource/promos/promo2.png");
+    background: url("./resource/promos/promo2.png");
 }
 
 .card3 {
-    background: url("/resource/promos/promo3.png");
+    background: url("./resource/promos/promo3.png");
 }
 
 .card4 {
-    background: url("/resource/promos/promo5.png");
+    background: url("./resource/promos/promo5.png");
 }
 
 .card5 {
-    background: url("/resource/promos/promo4.png");
+    background: url("./resource/promos/promo4.png");
 }
 
 .card1, .card2 , .card3 , .card4 , .card5{
