@@ -1,3 +1,18 @@
-@import url('./global.css');
-@import url('./header.css');
-@import url('./inicio/startMain.css');
+/* Estilos Bases, Varible y Fonts */
+@import url('./base/reset.css');
+
+/* Estilos de layouts*/
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+/* Componentes reutilizables */
+@import url('./components/slider.css');
+@import url('./components//buttons.css');
+
+/* Estilos de las Paginas*/
+@import url('./pages/inicio.css');
+
+.active {
+    opacity: 1;
+    transform: translate(0);
+}

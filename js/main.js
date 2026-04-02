@@ -27,7 +27,7 @@ const caract = document.querySelectorAll('.caract');
 caract.forEach(card => observer.observe(card));
 
 const sectionPanel = document.querySelector('.sectionPanel');
-observer.observe(sectionPanel); // Directo, sin vueltas.
+observer.observe(sectionPanel); 
 
 
 /* Slider animation */

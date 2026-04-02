@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Linear+A&display=swap');
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.noto-sans-linear-a-regular {
+    font-family: "Noto Sans Linear A", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}  

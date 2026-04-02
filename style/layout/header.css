@@ -20,7 +20,7 @@
 }
 
 .imgLogo {
-    height: 6rem;
+    height: 6.5rem;
 }
 
 .panelNav {
@@ -34,7 +34,7 @@
     list-style: none;
 }
 
-.itemNav a{
+.itemNav a  {
     color: var(--primary-color);
 
     display: flex;
@@ -48,10 +48,10 @@
     transition: all 0.3s ease-in-out;
 }
 
-.itemNav:hover a{
+.panelNav .itemNav:hover a{
     color: var(--primary-light);
 }
 
-.itemNav:hover img {
-    filter: drop-shadow(1px 1px 2px var(--primary-light))
+.panelNav .itemNav:hover img {
+    filter: drop-shadow(1px 1px 4px var(--primary-light))
 }

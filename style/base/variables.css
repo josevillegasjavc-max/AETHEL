@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #2e8b57;       /* Verde Esmeralda (Principal) */
+    --primary-light: #45b074;       /* Verde claro para hovers */
+    --primary-dark: #1e5c39;        /* Verde oscuro para contrastes */
+    --soft-wood: #d2b48c;           /* Tono madera clara */
+    --earth-sand: #e8dcc4;          /* Tono tierra/arena */
+
+    /* Colores Neutros (Interfaz y Texto) */
+    --bg-color: #f1f1f1fb;                  /* Fondo gris muy claro (casi blanco) */
+    --text-main: rgb(32, 32, 32);           /* Gris para textos*/
+
+    /* Sombras y Bordes */
+    --shadow-md: 0 0.1rem 1.5rem rgba(117, 117, 117, 0.658); /* Sombra clara */
+    --shadow-sm: 0 0.1rem 1.5rem rgba(48, 48, 48, 0.685);    /* Sombra oscura */
+    --radius: 1.6rem;      
+    
+    --header-height: 7rem;
+    --border: 2px solid rgba(0, 0, 0, 0.918);
+}

@@ -1,0 +1,19 @@
+.button {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    color: var(--bg-color);
+    margin: 2rem 0 0 2rem;
+    width: max-content;
+    font-size: 2rem;
+
+    background: -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-light));
+
+    padding: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: -webkit-repeating-linear-gradient(var(--primary-light), var(--primary-light));
+    box-shadow: var(--shadow-sm);
+    transform: scale(1.05);
+}
