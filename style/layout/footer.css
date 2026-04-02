@@ -6,7 +6,7 @@
     background: var(--bg-color);
     border-radius: 7rem 7rem 0 0;
 
-    width: 100%;
+    width: 100vw;
 }
 
 .footerBody {
@@ -95,4 +95,45 @@
 .footerCopyr p {
     color: white;
     font-size: 1.7rem;
+}
+
+@media screen and (width <= 800px) {
+    .header {
+        background: var(--primary-color);
+    }
+
+
+
+
+
+
+    .footerBody {
+        border: var(--border);
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footerBody div {
+        border: var(--border);
+        max-width: 100%;
+    }
+    
+    .logoFooter {
+        text-align: center;
+    }
+
+    .redes {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;   
+
+        justify-content: center;
+        gap: 3.5rem;       
+    }
+
+    .redes .itemNav {
+        max-width: min-content;
+        margin: 0.5rem; 
+    }
 }

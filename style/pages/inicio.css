@@ -1,3 +1,4 @@
+/* Seccion informativa */
 .containInformation {
     display: flex;
     justify-content: space-between;
@@ -101,14 +102,14 @@
     transition: all 0.6s ease-out;
 }
 
-.containImg{
+.containImg {
     background: var(--bg-color);
     border-radius: 50%;
     user-select: none;
     padding: 1.9rem;
 }
 
-.caract h2{
+.caract h3 {
     font-size: 3rem;
 }
 
@@ -173,10 +174,13 @@
     font-size: 2rem;
 }
 
+
+/* Seccion informativa 2 sobre las especialidades*/
 .informationEspecialistas {
     align-items: center;
     min-height: 50rem;
     height: fit-content;
+    margin-bottom: 3rem;
 }
 
 .informationEspecialistas .information{
@@ -194,4 +198,83 @@
     aspect-ratio: 14 / 10; 
     margin-left: 2%;
     object-position: top center; 
+}
+
+
+
+/* Aside blog de salud informativo*/
+.blog {
+    box-shadow: inset var(--shadow-md);
+    margin-bottom: 4rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    width: 100vw; 
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.titleSec {
+    background: 
+    -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-dark));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    margin: 2rem 0 1rem 0;
+    font-size: 3.9rem;
+}
+
+.sectionBlog {
+    display: flex;
+    gap: 3rem;
+}
+
+.itemBlog {
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    padding: 1rem;
+
+    border-radius: 1rem;
+    height: 45rem;
+    width: 34rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.itemBlog:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.imgItemBlog {
+    border-radius: 1rem;
+    height: 24rem;
+    width: 100%;
+}
+
+.itemBlog div {
+    margin-top: 0.9rem;
+    height: 40%;
+}
+
+.titleItemBlog {
+    color: var(--primary-dark);
+    font-size: 1.7rem;
+}
+
+.textItemBlog {
+    color: var(--text-main);
+    margin: 1rem 0.2rem;
+    font-size: 1.4rem;
+}
+
+.blog .button {
+    margin: 2rem 0 1.5rem 0;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    width: fit-content;
 }
