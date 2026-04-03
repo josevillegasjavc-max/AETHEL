@@ -12,6 +12,7 @@
 /* Estilos de las Paginas*/
 @import url('./pages/inicio.css');
 
+/* Estilos para aparatos mobiles*/
 @import url('./layout/media.css');
 
 .active {

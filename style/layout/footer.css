@@ -19,40 +19,49 @@
 }
 
 .footerBody div {
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
     color: var(--text-main) ;
     font-size: 1.5rem;
     max-width: 25%;
     padding: 1rem;
 }
 
-.footerBody div, .panelNavFooter {
+.logoFooter .logo {
+    border: var(--border);
+    margin: 0;
+}
+
+.logoFooter .imgLogo{
+    border: var(--border);
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 1.6rem;
+    max-width: 30rem;
+}
+
+
+.titleFooter {
+    color: var(--primary-dark);
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-left: -1rem;
+}
+
+.panelNavFooter {
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
 }
 
-.panelNavFooter .itemNav a {
+.panelNavFooter .itemNav {
+    font-size: 1.6rem;
     gap: 1.12rem;
-    font-size: 1.6rem;
-}
-
-.titleFooter {
-    font-size: 2rem;
-    font-weight: bolder;
-    margin-left: -1rem;
-    color: var(--primary-dark);
-}
-
-.logoFooter .logo {
-    margin: 0;
-}
-
-.logoFooter .imgLogo{
-    height: 8.5rem;
-}
-
-.footer p , .footer .itemNav {
-    font-size: 1.6rem;
 }
 
 .titleRedes {
@@ -60,15 +69,20 @@
     margin: 0;
 }
 
+.footerBody .divRed {
+    padding: 0;
+}
+
 .redes {
-    max-height: 14rem;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .redes .itemNav {
-    flex: 1 2 calc(50% - 1.1rem);
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .icon-svg {
@@ -87,7 +101,7 @@
     background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
     display: flex;
     justify-content:center;
-    align-items: center;
+    text-align: center;
     min-height: 4rem;
     width: 100%;
 }
@@ -95,45 +109,4 @@
 .footerCopyr p {
     color: white;
     font-size: 1.7rem;
-}
-
-@media screen and (width <= 800px) {
-    .header {
-        background: var(--primary-color);
-    }
-
-
-
-
-
-
-    .footerBody {
-        border: var(--border);
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .footerBody div {
-        border: var(--border);
-        max-width: 100%;
-    }
-    
-    .logoFooter {
-        text-align: center;
-    }
-
-    .redes {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;   
-
-        justify-content: center;
-        gap: 3.5rem;       
-    }
-
-    .redes .itemNav {
-        max-width: min-content;
-        margin: 0.5rem; 
-    }
 }

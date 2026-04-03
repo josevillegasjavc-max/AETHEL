@@ -1,0 +1,97 @@
+@media screen and (width <= 800px) {
+    .containInformation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin: 1.2rem;
+    }
+
+    .imgInformation {
+        width: 100%;
+        max-width: 35rem;
+    }
+
+    .containCaract {
+        flex-direction: column;
+        padding:  2.5rem 0;
+        gap: 2rem;
+    }
+
+    .caract {
+        gap: 0.1;
+        max-width: 35%;
+    }
+
+    .sectionPanel {
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .itemCard {
+        width: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .informationEspecialistas {
+        margin-top: 5rem;
+    }
+
+    .informationEspecialistas .information .title {
+        margin-bottom: 1rem;
+    }
+
+    .informationEspecialistas .information{
+        width: 100%;
+    }
+
+    .informationEspecialistas .imgInformation {
+        aspect-ratio: 14 / 10; 
+        width: 100%;
+        margin-left: 0;
+        object-position: top center; 
+    }
+
+    /* medias footer*/
+    .footerBody {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footerBody div {
+        text-align: center;
+        max-width: 100%;
+        margin:  0 auto;
+    }
+
+    .titleFooter {
+        margin-left: 0rem;
+    }
+
+    .panelNavFooter {
+        align-items: center;
+    }
+
+    .redes {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0.5rem;       
+    }
+
+    .redes .itemNav {
+        margin: 0.5rem; 
+    }
+}

@@ -2,8 +2,8 @@
     border-radius: var(--radius);
     box-shadow: var(--shadow-md);
     color: var(--bg-color);
-    margin: 2rem 0 0 2rem;
     width: max-content;
+    margin-top: 2rem;
     font-size: 2rem;
 
     background: -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-light));
