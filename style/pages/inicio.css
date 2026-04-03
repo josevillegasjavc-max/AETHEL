@@ -38,7 +38,6 @@
     -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-light));
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    
     font-size: 6rem;
 }
 
@@ -174,7 +173,6 @@
     font-size: 2rem;
 }
 
-
 /* Seccion informativa 2 sobre las especialidades*/
 .informationEspecialistas {
     align-items: center;
@@ -198,8 +196,6 @@
     margin-left: 2%;
     object-position: top center; 
 }
-
-
 
 /* Aside blog de salud informativo*/
 .blog {
@@ -244,7 +240,21 @@
     min-height: 45rem;
     width: 34rem;
 
+    opacity: 0;
+    transform: translateY(30px);
     transition: all 0.2s ease-in-out;
+}
+
+.sectionBlog  a:nth-child(1) .itemBlog {
+    transition: all 0.4s ease-out;
+}
+
+.sectionBlog  a:nth-child(2) .itemBlog {
+    transition: all 0.9s ease-out;
+}
+
+.sectionBlog  a:nth-child(3) .itemBlog {
+    transition: all 1.4s ease-out;
 }
 
 .itemBlog:hover {

@@ -1,4 +1,5 @@
 @media screen and (width <= 800px) {
+    /* media information*/
     .containInformation {
         display: flex;
         align-items: center;
@@ -22,6 +23,7 @@
         max-width: 35rem;
     }
 
+    /* media caract*/
     .containCaract {
         flex-direction: column;
         padding:  2.5rem 0;
@@ -33,6 +35,7 @@
         max-width: 35%;
     }
 
+    /* media panel*/
     .sectionPanel {
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
@@ -47,6 +50,7 @@
         flex-direction: column;
     }
 
+    /* media informationTwo*/
     .informationEspecialistas {
         margin-top: 5rem;
     }
@@ -66,7 +70,7 @@
         object-position: top center; 
     }
 
-    /* medias footer*/
+    /* media footer*/
     .footerBody {
         flex-direction: column;
         gap: 2rem;

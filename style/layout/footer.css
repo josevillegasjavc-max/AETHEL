@@ -15,36 +15,35 @@
     padding: 3rem 7rem;
 
     width: 100%;
-    gap: 5rem;
+    gap: 6rem;
 }
 
 .footerBody div {
-    border: var(--border);
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
 
     color: var(--text-main) ;
     font-size: 1.5rem;
-    max-width: 25%;
+    max-width: 20%;
     padding: 1rem;
 }
 
 .logoFooter .logo {
-    border: var(--border);
-    margin: 0;
+    margin: 0 auto;
 }
 
 .logoFooter .imgLogo{
-    border: var(--border);
-    margin: 0 auto;
+    max-height: 11rem;
+    height: 100%;
+    width: 100%;
+    scale: 1.15;
 }
 
 .footer p {
     font-size: 1.6rem;
     max-width: 30rem;
 }
-
 
 .titleFooter {
     color: var(--primary-dark);

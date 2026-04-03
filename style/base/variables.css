@@ -2,7 +2,6 @@
     --primary-color: #2e8b57;       /* Verde Esmeralda (Principal) */
     --primary-light: #45b074;       /* Verde claro para hovers */
     --primary-dark: #1e5c39;        /* Verde oscuro para contrastes */
-    --soft-wood: #d2b48c;           /* Tono madera clara */
     --earth-sand: #e8dcc4;          /* Tono tierra/arena */
 
     /* Colores Neutros (Interfaz y Texto) */
@@ -15,5 +14,5 @@
     --radius: 1.6rem;      
     
     --header-height: 6.5rem;
-    --border: 2px solid rgba(0, 0, 0, 0);
+    --border: 2px solid rgba(0, 0, 0, 0.514);
 }
