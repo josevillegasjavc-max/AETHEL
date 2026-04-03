@@ -57,6 +57,7 @@ header {
 }
 
 .panelButton {
+    user-select: none;
     display: none;
 }
 
