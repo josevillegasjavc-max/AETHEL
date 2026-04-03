@@ -21,11 +21,14 @@
 .footerBody div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.4rem;
 
     color: var(--text-main) ;
     font-size: 1.5rem;
-    max-width: 20%;
+    max-width: 25rem;
+    width: 100%;
+    
     padding: 1rem;
 }
 

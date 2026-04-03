@@ -5,12 +5,13 @@
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
 
-/* Componentes reutilizables */
-@import url('./components/slider.css');
-@import url('./components//buttons.css');
-
 /* Estilos de las Paginas*/
 @import url('./pages/inicio.css');
+
+/* Componentes reutilizables */
+@import url('./components//buttons.css');
+@import url('./components/slider.css');
+@import url('./components/blog.css');
 
 /* Estilos para aparatos mobiles*/
 @import url('./layout/media.css');

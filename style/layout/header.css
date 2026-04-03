@@ -7,9 +7,8 @@ header {
     width: 100%;    
     
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18rem;
+    justify-content: space-between;
+    gap: 3rem;
 
     background: var(--bg-color);
     box-shadow: var(--shadow-md);
@@ -29,7 +28,7 @@ header {
     display: flex;
     align-items: center;
     font-size: 1.6rem;
-    gap: 2rem;
+    gap: 1.5rem;
 } 
 
 .itemNav {
@@ -38,9 +37,8 @@ header {
 
 .itemNav a  {
     color: var(--primary-color);
-
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 0.5rem;
 
     transition: all 0.3s ease-in-out;
@@ -50,10 +48,18 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-.panelNav .itemNav:hover a{
+.panelNav .itemNav:hover a, .panelButton:hover {
     color: var(--primary-light);
 }
 
 .panelNav .itemNav:hover img {
     filter: drop-shadow(1px 1px 4px var(--primary-light))
+}
+
+.panelButton {
+    display: none;
+}
+
+.imgMenu {
+    display: none;
 }
