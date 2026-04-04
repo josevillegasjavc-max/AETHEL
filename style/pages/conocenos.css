@@ -1,0 +1,81 @@
+.greenBody {
+    background: -webkit-linear-gradient(60deg, var(--primary-light) 10%, var(--primary-light) 90%);
+}
+
+.containConocenos .conocenosHead {
+    min-height: 40rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containConocenos .conocenosHead .title {
+    text-shadow: 8px 5px 19px rgba(95, 92, 92, 0.164);
+    text-align: center;
+    line-height: 10rem;
+    font-size: 7.5rem;
+    letter-spacing: 0.2rem;
+
+    background: 
+    -webkit-repeating-linear-gradient(90deg, var(--bg-color) 90%, var(--bg-color) 91%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.containConocenos .containInformation {
+    box-shadow: var(--shadow-md);
+    border-radius: 6rem;
+    margin-bottom: 6rem;
+}
+
+.containConocenos .information {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.containConocenos .imgInformation {
+    border-radius: 6rem;
+    border: none;
+}
+
+.containConocenos .information .title {
+    margin-bottom: 2rem;
+}
+
+.containInformation:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.information .list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    width: 80%;
+    text-align: start;
+    margin-top: 1rem;
+}
+
+.information .list span {
+    color: var(--primary-dark);
+    font-size: 2.1rem;
+}
+
+.information .containButton {
+    justify-content: center;
+    position: relative;
+    display: flex;
+
+    height: min-content;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.containButton .button {
+    min-width: 20rem;
+}

@@ -7,6 +7,7 @@
 
 /* Estilos de las Paginas*/
 @import url('./pages/inicio.css');
+@import url("./pages/conocenos.css");
 
 /* Componentes reutilizables */
 @import url('./components//buttons.css');

@@ -31,17 +31,3 @@ caract.forEach(card => observer.observe(card));
 
 const sectionPanel = document.querySelector('.sectionPanel');
 observer.observe(sectionPanel); 
-
-/* Agrega animacion y cambie la clase para desplegar el menu del nav en pantallas pequeñas */
-const panelButton = document.querySelector('.panelButton');
-const panel = document.querySelector('.panelNav');
-const itemNav = document.querySelectorAll('.itemNavHeader');
-const imgMenu = document.querySelector('.imgMenu')
-
-panelButton.addEventListener('click', () => {
-    panel.classList.toggle("panelNavActive");
-
-    itemNav.forEach(item => item.classList.toggle("activeMedia"));
-    imgMenu.classList.toggle("activeMedia");
-
-});

@@ -6,6 +6,10 @@
         flex-direction: column;
     }
 
+    .containInformation:nth-child(3){
+        flex-direction: column;
+    }
+
     .information {
         width: 100%;
         margin: 0 auto;
@@ -21,6 +25,11 @@
     .imgInformation {
         width: 100%;
         max-width: 35rem;
+        margin-bottom: 2rem;
+    }
+
+    .button {
+        margin-left: 0;
     }
 
     /* media caract*/
