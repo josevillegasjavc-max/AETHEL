@@ -108,6 +108,16 @@
     .redes .itemNav {
         margin: 0.5rem; 
     }
+
+    .containUbicaciones .containInformation div {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .ubicacion {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (width <= 945px) {
