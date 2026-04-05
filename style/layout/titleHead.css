@@ -1,0 +1,25 @@
+.greenBody {
+    background: -webkit-linear-gradient(60deg, var(--primary-light) 10%, var(--primary-light) 90%);
+}
+
+.titleHead {
+    min-height: 40rem;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleHead .title {
+    text-shadow: 8px 5px 19px rgba(95, 92, 92, 0.164);
+    text-align: center;
+    line-height: 10rem;
+    font-size: 7.5rem;
+    letter-spacing: 0.2rem;
+
+    background: 
+    -webkit-repeating-linear-gradient(90deg, var(--bg-color) 90%, var(--bg-color) 91%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

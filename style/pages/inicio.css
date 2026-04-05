@@ -39,6 +39,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-size: 6rem;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
 }
 
 .text {
@@ -116,63 +120,6 @@
     font-size: 2.2rem;
 }
 
-/* Seccion de panel para navegacion en medio de la web */
-.sectionPanel {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-    gap: 2rem;
-
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: all 0.9s ease-out;
-}
-
-.itemCard {
-    box-shadow: var(--shadow-md);
-    border-radius: var(--radius);
-    padding: 1rem 1.5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-
-    transition: all 0.3s ease-in-out;
-}
-
-.titleItem {
-    font-size: 1.6rem;
-    font-weight: bolder;
-    color: var(--primary-dark);
-}
-
-.textItem {
-    margin: 0.7rem 0;
-    font-size: 1.5rem;
-    color: var(--text-main);
-}
-
-.itemCard:hover {
-    box-shadow: var(--shadow-sm);
-}
-
-.itemImg {
-    max-width: 5rem;
-}
-
-.itemCard:first-child {
-    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
-}
-
-.itemCard:first-child .titleItem{
-    color: var(--bg-color);
-    letter-spacing: 0.2rem;
-    font-size: 2rem;
-}
-
 /* Seccion informativa 2 sobre las especialidades*/
 .informationEspecialistas {
     align-items: center;
@@ -195,4 +142,99 @@
     aspect-ratio: 14 / 10; 
     margin-left: 2%;
     object-position: top center; 
+}
+
+/* Aside blog de salud informativo*/
+.blog {
+    box-shadow: inset var(--shadow-md);
+    margin-bottom: 4rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    width: 100vw; 
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.titleSec {
+    background: 
+    -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-dark));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    margin: 2rem 0 1rem 0;
+    font-size: 3.9rem;
+}
+
+.sectionBlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.itemBlog {
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    padding: 1rem;
+
+    border-radius: 1rem;
+    min-height: 45rem;
+    width: 34rem;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.2s ease-in-out;
+}
+
+.sectionBlog  a:nth-child(1) .itemBlog {
+    transition: all 0.4s ease-out;
+}
+
+.sectionBlog  a:nth-child(2) .itemBlog {
+    transition: all 0.9s ease-out;
+}
+
+.sectionBlog  a:nth-child(3) .itemBlog {
+    transition: all 1.4s ease-out;
+}
+
+.itemBlog:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.imgItemBlog {
+    border-radius: 1rem;
+    height: 24rem;
+    width: 100%;
+}
+
+.itemBlog div {
+    margin-top: 0.9rem;
+    height: 40%;
+}
+
+.titleItemBlog {
+    color: var(--primary-dark);
+    font-size: 1.7rem;
+}
+
+.textItemBlog {
+    color: var(--text-main);
+    margin: 1rem 0.2rem;
+    font-size: 1.4rem;
+}
+
+.blog .button {
+    margin: 2rem 0 1.5rem 0;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    width: fit-content;
 }

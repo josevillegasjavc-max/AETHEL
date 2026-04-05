@@ -4,15 +4,17 @@
 /* Estilos de layouts*/
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
+@import url("./layout/titleHead.css");
 
 /* Estilos de las Paginas*/
 @import url('./pages/inicio.css');
 @import url("./pages/conocenos.css");
+@import url("./pages/ubicaciones.css");
 
 /* Componentes reutilizables */
 @import url('./components//buttons.css');
+@import url("./components/panel.css");
 @import url('./components/slider.css');
-@import url('./components/blog.css');
 
 /* Estilos para aparatos mobiles*/
 @import url('./layout/media.css');

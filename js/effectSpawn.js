@@ -23,6 +23,12 @@ infoSection.forEach(section => observer.observe(section));
 const blogCard = document.querySelectorAll('.itemBlog');
 blogCard.forEach(section => observer.observe(section));
 
+const titles = document.querySelectorAll('.title');
+titles.forEach(title => observer.observe(title));
+
+const ubicaciones = document.querySelectorAll('.ubicacion');
+ubicaciones.forEach(section => observer.observe(section));
+
 const imgSection = document.querySelectorAll('.imgInformation');
 imgSection.forEach(imga => observer.observe(imga));
 

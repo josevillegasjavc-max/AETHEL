@@ -1,0 +1,57 @@
+/* Seccion de panel para navegacion en medio de la web */
+.sectionPanel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    gap: 2rem;
+
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.9s ease-out;
+}
+
+.itemCard {
+    background: var(--bg-color);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.titleItem {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: var(--primary-dark);
+}
+
+.textItem {
+    margin: 0.7rem 0;
+    font-size: 1.5rem;
+    color: var(--text-main);
+}
+
+.itemCard:hover {
+    box-shadow: 0 0.1rem 1.5rem rgba(12, 12, 12, 0.685);;
+}
+
+.itemImg {
+    max-width: 5rem;
+}
+
+.itemCard:first-child {
+    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
+}
+
+.itemCard:first-child .titleItem{
+    color: var(--bg-color);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+}
