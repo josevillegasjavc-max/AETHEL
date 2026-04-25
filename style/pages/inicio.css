@@ -146,8 +146,10 @@
 
 /* Aside blog de salud informativo*/
 .blog {
+    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
     box-shadow: inset var(--shadow-md);
     margin-bottom: 4rem;
+    border-radius: 6rem;
 
     display: flex;
     align-items: center;
@@ -162,11 +164,7 @@
 }
 
 .titleSec {
-    background: 
-    -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-dark));
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
+    color: var(--bg-color);
     margin: 2rem 0 1rem 0;
     font-size: 3.9rem;
 }
@@ -176,9 +174,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+    padding: 1rem 0;
 }
 
 .itemBlog {
+    background: var(--bg-color);
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow-md);
@@ -208,6 +208,7 @@
 
 .itemBlog:hover {
     box-shadow: var(--shadow-sm);
+    transform: translateY(-5px);
 }
 
 .imgItemBlog {
@@ -233,8 +234,18 @@
 }
 
 .blog .button {
-    margin: 2rem 0 1.5rem 0;
+    background: var(--bg-color);
+    margin: 1rem 0 1.5rem 0;
     letter-spacing: 0.2rem;
     text-align: center;
     width: fit-content;
+
+    font-size: 2.2rem;
+    font-weight: bolder;
+    
+    color: var(--primary-color);
+}
+
+.blog .button:hover {
+    background: var(--bg-color);
 }

@@ -1,6 +1,10 @@
 .containConocenos .containInformation {
     box-shadow: var(--shadow-md);
     border-radius: 6rem;
+    margin-bottom: 8rem;
+}
+
+.containConocenos .containInformation:last-child {
     margin-bottom: 6rem;
 }
 
