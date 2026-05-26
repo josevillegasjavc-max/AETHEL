@@ -1,0 +1,106 @@
+/* Aside blog de salud informativo*/
+.blog {
+    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
+    box-shadow: inset var(--shadow-md);
+    margin-bottom: 4rem;
+    border-radius: 6rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    width: 100vw; 
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.titleSec {
+    color: var(--bg-color);
+    margin: 2rem 0 1rem 0;
+    font-size: 3.9rem;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.sectionBlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.itemBlog {
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    padding: 1rem;
+
+    border-radius: 1rem;
+    min-height: 45rem;
+    width: 34rem;
+
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.sectionBlog  a:nth-child(1) .itemBlog {
+    transition: all 0.4s ease-out;
+}
+
+.sectionBlog  a:nth-child(2) .itemBlog {
+    transition: all 0.9s ease-out;
+}
+
+.sectionBlog  a:nth-child(3) .itemBlog {
+    transition: all 1.4s ease-out;
+}
+
+.itemBlog:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-5px);
+}
+
+.imgItemBlog {
+    border-radius: 1rem;
+    height: 24rem;
+    width: 100%;
+}
+
+.itemBlog div {
+    margin-top: 0.9rem;
+    height: 40%;
+}
+
+.titleItemBlog {
+    color: var(--primary-dark);
+    font-size: 1.7rem;
+}
+
+.textItemBlog {
+    text-shadow: 1px 1px 15px #00000073;
+    color: var(--text-main);
+    margin: 1rem 0.2rem;
+    font-size: 1.4rem;
+}
+
+.blogAlter {
+    background: var(--bg-color);
+    border-radius: 4rem;
+    margin-top: 4rem;
+}
+
+.blogAlter .titleSec {
+    background: 
+    -webkit-repeating-linear-gradient(var(--primary-color), var(--primary-light));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 4.2rem;
+}

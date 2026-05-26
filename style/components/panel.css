@@ -2,7 +2,8 @@
 .sectionPanel {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
+    
+    margin-top: 3.5rem;
     margin-bottom: 2rem;
     padding: 0 1rem;
     gap: 2rem;
@@ -15,8 +16,8 @@
 .itemCard {
     background: var(--bg-color);
     box-shadow: var(--shadow-sm);
-    border-radius: var(--radius);
-    padding: 1rem 1.5rem;
+    border-radius: 1.6rem;
+    padding: 1rem 2rem;
 
     display: flex;
     align-items: center;
@@ -40,6 +41,7 @@
 
 .itemCard:hover {
     box-shadow: 0 0.1rem 1.5rem rgba(12, 12, 12, 0.685);;
+    transform: translateY(-4px);
 }
 
 .itemImg {
@@ -47,6 +49,7 @@
 }
 
 .itemCard:first-child {
+    text-align: center;
     background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
 }
 

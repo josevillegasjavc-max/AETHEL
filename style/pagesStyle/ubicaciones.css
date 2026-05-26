@@ -1,3 +1,7 @@
+.containUbicaciones .titleHead {
+    min-height: 26rem;
+}
+
 .containUbicaciones .containInformation {
     box-shadow: var(--shadow-md);
     flex-direction: column;

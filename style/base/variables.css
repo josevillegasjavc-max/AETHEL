@@ -9,10 +9,9 @@
     --text-main: rgb(32, 32, 32);           /* Gris para textos*/
 
     /* Sombras y Bordes */
-    --shadow-md: 0 0.1rem 1.5rem rgba(117, 117, 117, 0.658); /* Sombra clara */
-    --shadow-sm: 0 0.1rem 1.5rem rgba(48, 48, 48, 0.685);    /* Sombra oscura */
-    --radius: 1.6rem;      
+    --shadow-md: 0 0.1rem 1.5rem rgba(20, 17, 17, 0.658); /* Sombra clara */
+    --shadow-sm: 0 0.1rem 1.5rem rgba(48, 48, 48, 0.685); /* Sombra oscura */
     
     --header-height: 6.5rem;
-    --border: 2px solid rgba(0, 0, 0, 0.39);
+    --border: 2px solid rgb(0, 0, 0);
 }

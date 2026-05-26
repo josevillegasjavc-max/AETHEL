@@ -7,17 +7,21 @@
 @import url("./layout/titleHead.css");
 
 /* Estilos de las Paginas*/
-@import url('./pages/inicio.css');
-@import url("./pages/conocenos.css");
-@import url("./pages/ubicaciones.css");
+@import url('./pagesStyle/inicio.css');
+@import url("./pagesStyle/conocenos.css");
+@import url("./pagesStyle/paquetes.css");
+@import url("./pagesStyle/ubicaciones.css");
+@import url("./pagesStyle/especialidades.css");
+@import url("./pagesStyle/cita.css");
 
 /* Componentes reutilizables */
+@import url('./components//blog.css');
 @import url('./components//buttons.css');
 @import url("./components/panel.css");
 @import url('./components/slider.css');
 
 /* Estilos para aparatos mobiles*/
-@import url('./layout/media.css');
+@import url('./media.css');
 
 .active {
     opacity: 1;

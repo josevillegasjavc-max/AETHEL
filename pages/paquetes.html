@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style/main.css">
     <script type="module" src="../js/main.js" ></script>
 </head>
+
 <body class="greenBody">
     <header class="header">
         <a href="../index.html" draggable="false">
@@ -21,29 +22,209 @@
                 <img src="../resource/LogoPrincipalV1PNG.png" alt="Logo De La Pagina web Aethel Pharmaceuticals" class="imgLogo imgMenu" draggable="false">
             </button>
             <li class="itemNav itemNavHeader" ><a href="./conocenos.html"><img src="../resource/icons/usuarios.png" alt="icono de usuarios una persona">Conócenos</a></li>
-            <li class="itemNav itemNavHeader" ><a href="#"><img src="../resource/icons/farmacia.png" alt="cruz medica">Servicios</a></li>
+            <li class="itemNav itemNavHeader" ><a href="./servicios.html"><img src="../resource/icons/farmacia.png" alt="cruz medica">Servicios</a></li>
             <li class="itemNav itemNavHeader" ><a href="./especialidades.html"><img src="../resource/icons/estetoscopio.png" alt="icono de estetoscopio para las especialidades">Especialidades</a></li>
-            <li class="itemNav itemNavHeader" ><a href="./paquetes.html"><img src="../resource/icons/paquete.png"  alt="icono de paquete">Paquetes Preventivos</a></li>
+            <li class="itemNav itemNavHeader" ><a href="#"><img src="../resource/icons/paquete.png"  alt="icono de paquete">Paquetes Preventivos</a></li>
             <li class="itemNav itemNavHeader" ><a href="./ubicaciones.html"><img src="../resource/icons/marcador.png" alt="icono de ubicacion">Ubicaciones</a></li>
         </ul>
     </header>
 
     <main>
-        <div class="main-container containServicios">
+        <div class="main-container containPaquetes">
             <section class="titleHead">
-                <h2 class="title"> Servicios Que Ofrecemos en AETHEL </h2>
+                <h2 class="title"> Paquetes Preventivos </h2>
             </section>
+
+            <section class="catalogo">
+                <div class="containBuscador">
+                    <input class="buscador noto-sans-linear-a-regular" type="text" placeholder="Buscar">
+                    <a href="./agendarCitas.html">
+                        <button class="button">Agendar Cita</button>
+                    </a>
+                </div>
+                
+                <div class="containItem">
+                    <!-- 0. Reumatologia -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://clinicadkf.com/wp-content/uploads/2022/12/pexels-karolina-grabowska-4506071-scaled.jpg" draggable="false" alt="imagen representativa de los buenos habitos descriptos">
+                        </div>
+                            <h3 class="titleItemCatalogo">Reumatología (presencial + videoconsulta)</h3>
+                        <div>
+                            <h4 class="precio">$51.99</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 1. Ginecología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://centromedicoabc.com/wp-content/uploads/2026/02/ginecologia-y-obstetricia-1.webp" draggable="false" alt="Control Ginecológico">
+                        </div>
+                        <h3 class="titleItemCatalogo">Ginecología (Control <br> Anual + Ecografía)</h3>
+                        <div>
+                            <h4 class="precio">$45.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 2. Cardiología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://i0.wp.com/medicourgente.com/wp-content/uploads/2025/02/cardiologia.webp?w=790&ssl=1" draggable="false" alt="Evaluación Cardíaca">
+                        </div>
+                        <h3 class="titleItemCatalogo">Cardiología (Chequeo + <br> Electrocardiograma)</h3>
+                        <div>
+                            <h4 class="precio">$60.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 3. Pediatría -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://www.noticiasbarquisimeto.com/wp-content/uploads/2026/03/image-354.png" draggable="false" alt="Control Pediátrico">
+                        </div>
+                        <h3 class="titleItemCatalogo">Pediatría (Control de <br> Crecimiento y Vacunas)</h3>
+                        <div>
+                            <h4 class="precio">$35.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 4. Dermatología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://esvitalcenter.com/wp-content/uploads/dermatologo.jpg" draggable="false" alt="Cuidado de la Piel">
+                        </div>
+                        <h3 class="titleItemCatalogo">Dermatología (Limpieza <br> Facial + Consulta)</h3>
+                        <div>
+                            <h4 class="precio">$55.50</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 5. Nutrición -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://universidadeuropea.com/resources/media/images/shutterstock_2480850629_1.width-640.jpg" draggable="false" alt="Plan Nutricional">
+                        </div>
+                        <h3 class="titleItemCatalogo">Nutrición (Plan Dieta + <br> Bioimpedancia)</h3>
+                        <div>
+                            <h4 class="precio">$29.99</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 6. Odontología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://odontologia.javeriana.edu.co/documents/d/odontologia/shutterstock_2491484923-jpg" draggable="false" alt="Salud Bucal">
+                        </div>
+                        <h3 class="titleItemCatalogo">Odontología (Limpieza <br> Profunda + Rayos X)</h3>
+                        <div>
+                            <h4 class="precio">$40.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 7. Psicología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://ecuador.unir.net/wp-content/uploads/sites/8/2025/01/Que-maestrias-puedo-estudiar-si-soy-psicologo2.jpg" draggable="false" alt="Terapia Psicológica">
+                        </div>
+                        <h3 class="titleItemCatalogo">Psicología (Sesión <br> Individual Online)</h3>
+                        <div>
+                            <h4 class="precio">$30.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 8. Traumatología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://clinicajaimeicatarroja.com/blog/wp-content/uploads/2023/01/pasando-consulta-1.jpg" draggable="false" alt="Rayos X y Huesos">
+                        </div>
+                        <h3 class="titleItemCatalogo">Traumatología (Consulta + <br> Evaluación Física)</h3>
+                        <div>
+                            <h4 class="precio">$48.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 9. Oftalmología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://www.esneca.lat/wp-content/uploads/que-trata-el-oftalmologo.jpg" draggable="false" alt="Examen de la Vista">
+                        </div>
+                        <h3 class="titleItemCatalogo">Oftalmología (Examen <br> Visual Completo)</h3>
+                        <div>
+                            <h4 class="precio">$25.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 10. Endocrinología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://centromedicoabc.com/wp-content/uploads/2024/06/Que-es-un-endocrinologo-scaled.webp" draggable="false" alt="Control Hormonal">
+                        </div>
+                        <h3 class="titleItemCatalogo">Endocrinología (Control <br> Metabólico + Perfil)</h3>
+                        <div>
+                            <h4 class="precio">$65.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+
+                    <!-- 11. Urología -->
+                    <article class="itemCatalogo">
+                        <div class="imgDiv">
+                            <img class="imgItemCatalogo" src="https://imvph.com.mx/wp-content/uploads/2024/03/imvph-blog-hero-Que-es-un-urologo.jpg" draggable="false" alt="Chequeo Urológico">
+                        </div>
+                        <h3 class="titleItemCatalogo">Urología (Chequeo <br> Preventivo Masculino)</h3>
+                        <div>
+                            <h4 class="precio">$52.00</h4>
+                            <a href="./agendarCitas.html">
+                                <button class="button"> Agendar </button>
+                            </a>                        
+                        </div>
+                    </article>
+                </div>
+            </section>
+
 
             <section class="sectionPanel">
                 <a href="./agendarCitas.html" class="itemCard">
                     <h3 class="titleItem montserrat">AGENDAR CITAS</h3>
                 </a>
-                <a href="./paquetes.html" class="itemCard">
+                <a href="./servicios.html" class="itemCard">
                     <div>
-                        <h3 class="titleItem montserrat">PAQUETES PREVENTIVOS</h3>
-                        <p class="textItem noto-sans-linear-a-regular">Cuidamos de tu bienestar a precios bajos</p>
+                        <h3 class="titleItem montserrat">SERVICIOS</h3>
+                        <p class="textItem noto-sans-linear-a-regular">Ofrecemos diversos servicios para tu salud</p>
                     </div>
-                    <img src="../resource/icons/caja.png" class="itemImg" alt="icono de caja para los paquetes preventivos" draggable="false">
+                    <img src="../resource/icons/medico-de-mano.png" class="itemImg" alt="icono de mano para servicios medicos" draggable="false">
                 </a>
                 <a href="./conocenos.html" class="itemCard">
                     <div>
@@ -65,7 +246,7 @@
                 <h2 class="titleSec">Blog de Salud</h2>
                 <section class="sectionBlog">
                     <a href="" draggable="false">
-                        <article class="itemBlog">
+                        <article class="itemBlog spawn">
                             <img class="imgItemBlog" src="../resource/blog/blogImg1.png" draggable="false" alt="imagen representativa de los buenos habitos descriptos">
                             <div>
                                 <h3 class="titleItemBlog">Consejos sobre hidratación, sueño de calidad, caminatas cortas, alimentación balanceada y salud menta:</h3>
@@ -75,7 +256,7 @@
                     </a>
 
                     <a href="" draggable="false">
-                        <article class="itemBlog">
+                        <article class="itemBlog spawn">
                             <img class="imgItemBlog" src="../resource/blog/blogImg2.png" draggable="false" alt="imagen representativa de un cerebro estimulado por las pantallas">
                             <div>
                                 <h3 class="titleItemBlog">Cómo el estrés afecta al cuerpo, consejos para desconectarse de las pantallas y cuándo es momento de buscar ayuda:</h3>
@@ -85,7 +266,7 @@
                     </a>
 
                     <a href="" draggable="false">
-                        <article class="itemBlog">
+                        <article class="itemBlog spawn">
                             <img class="imgItemBlog" src="../resource/blog/blogImg3.jpg" draggable="false" alt="">
                             <div>
                                 <h3 class="titleItemBlog">Qué hacer ante una quemadura leve, cómo limpiar una herida correctamente o qué debe tener un botiquín básico en casa:</h3>
@@ -94,8 +275,9 @@
                         </article>
                     </a>
                 </section>
-                <a href="./pages/servicios.html" class="button buttonBlog montserrat">Ver más...</a>
+                <a href="./pages/servicios.html" class="button buttonBlog montserrat">Ver mas...</a>
             </aside>
+
         </div>
     </main>
 
@@ -107,16 +289,16 @@
                         <img src="../resource/LogoPrincipalV1PNG.png" alt="Logo De La Pagina web Aethel Pharmaceuticals" class="imgLogo" draggable="false" >
                     </h1>
                 </a>
-                <p class="noto-sans-linear-a-regular">Comprometidos con tu bienestar integral a través de la medicina preventiva. En AETHEL, cuidamos de ti y de los que más quieres con excelencia y calidez humana.</p>
+                <p class="noto-sans-linear-a-regular">Comprometidos con tu bienestar integral a través de la medicina preventiva. En AETHEL, cuidamos de ti y de los Agendarieres con excelencia y calidez humana.</p>
             </div>
             
             <div>
                 <h2 class="titleFooter montserrat">Enlaces rapidos</h2>
                 <ul class="panelNavFooter montserrat">
                     <li class="itemNav" ><a href="../conocenos.html"><img src="../resource/icons/usuarios.png" alt="icono de usuarios una persona">Conócenos</a></li>
-                    <li class="itemNav" ><a href="#"><img src="../resource/icons/farmacia.png" alt="cruz medica">Servicios</a></li>
+                    <li class="itemNav" ><a href="../pages/servicios.html"><img src="../resource/icons/farmacia.png" alt="cruz medica">Servicios</a></li>
                     <li class="itemNav" ><a href="../pages/especialidades.html"><img src="../resource/icons/estetoscopio.png" alt="icono de estetoscopio para las especialidades">Especialidades</a></li>
-                    <li class="itemNav" ><a href="../pages/paquetes.html"><img src="../resource/icons/paquete.png" alt="icono de paquete">Paquetes Preventivos</a></li>
+                    <li class="itemNav" ><a href="#"><img src="../resource/icons/paquete.png" alt="icono de paquete">Paquetes Preventivos</a></li>
                     <li class="itemNav" ><a href="../pages/ubicaciones.html"><img src="../resource/icons/marcador.png" alt="icono de ubicacion">Ubicaciones</a></li>
                 </ul>
             </div>

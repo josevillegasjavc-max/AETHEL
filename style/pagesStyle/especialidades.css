@@ -1,0 +1,66 @@
+.containEspecialidades .titleHead  {
+    min-height: 29rem;
+}
+
+.catalogoEspecialidades {
+    box-shadow: var(--shadow-md);
+    background: var(--bg-color);
+    min-height: 60rem;
+    max-width: 100%;
+    padding: 4rem;
+}
+
+.catalogoEspecialidades .containItem {
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr)); 
+    margin-top: 1.5rem;
+    gap: 3.2rem 3rem ;
+}
+
+.catalogoEspecialidades .containItem .item {
+    border: 2px solid transparent;
+    box-shadow: var(--shadow-md);
+    border-radius: 1.5rem;
+    padding: 1rem 3rem;
+    min-height: 8rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    transition: all 0.2s 0.1s ease-in-out;
+}
+
+.catalogoEspecialidades .containItem .item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.catalogoEspecialidades .containItem .item img{
+    border: 2px solid var(--primary-color);
+    border-radius: 1.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.item svg {
+    color: var(--primary-color);
+    flex-shrink: 0;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.catalogoEspecialidades .containItem .item h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    width: 90%;
+    gap: 2rem;
+}
+
+.catalogoEspecialidades .containItem .item h4 span{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}

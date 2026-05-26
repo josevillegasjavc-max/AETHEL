@@ -6,7 +6,6 @@
     overflow-x: hidden;
     margin-bottom: 1.5rem;
 
-
     width: 100vw; /* Usamos viewport width para asegurar que toque los bordes */
     position: relative;
     left: 50%;
@@ -22,12 +21,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 6rem;
 }
 
 .sliderCard {
-    background: -webkit-linear-gradient(100deg, var(--primary-color) 0%, var(--primary-light) 70%);
     box-shadow: var(--shadow-md);
     border-radius: 5rem;
     height: 90%;
@@ -35,29 +32,23 @@
 }
 
 .card1 {
-    background: url("../../resource/promos/promo1.png");
+    background: url("../../resource/promos/promo1.png") center / cover no-repeat;;
 }
 
 .card2 {
-    background: url("../../resource/promos/promo2.png");
+    background: url("../../resource/promos/promo2.png") center / cover no-repeat;;
 }
 
 .card3 {
-    background: url("../../resource/promos/promo3.png");
+    background: url("../../resource/promos/promo3.png") center / cover no-repeat;;
 }
 
 .card4 {
-    background: url("../../resource/promos/promo5.png");
+    background: url("../../resource/promos/promo5.png") center / cover no-repeat;;
 }
 
 .card5 {
-    background: url("../../resource/promos/promo4.png");
-}
-
-.card1, .card2 , .card3 , .card4 , .card5{
-    background-size: cover;  
-    background-position: center; 
-    background-repeat: no-repeat;
+    background: url("../../resource/promos/promo4.png") center / cover no-repeat;;
 }
 
 .containButton {

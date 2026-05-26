@@ -1,3 +1,3 @@
 import './menu.js'
 import './effectSpawn.js'
-import './effectSlider.js'
+import './buscador.js'

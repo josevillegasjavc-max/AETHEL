@@ -17,23 +17,35 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-const infoSection = document.querySelectorAll('.information');
-infoSection.forEach(section => observer.observe(section));
+const cita = document.querySelectorAll('.containCita');
+cita.forEach(section => observer.observe(section));
 
-const blogCard = document.querySelectorAll('.itemBlog');
-blogCard.forEach(section => observer.observe(section));
+const information = document.querySelectorAll('.information');
+information.forEach(section => observer.observe(section));
+
+const imgInformation = document.querySelectorAll('.imgInformation');
+imgInformation.forEach(img => observer.observe(img));
 
 const titles = document.querySelectorAll('.title');
 titles.forEach(title => observer.observe(title));
-
-const ubicaciones = document.querySelectorAll('.ubicacion');
-ubicaciones.forEach(section => observer.observe(section));
-
-const imgSection = document.querySelectorAll('.imgInformation');
-imgSection.forEach(imga => observer.observe(imga));
 
 const caract = document.querySelectorAll('.caract');
 caract.forEach(card => observer.observe(card));
 
 const sectionPanel = document.querySelector('.sectionPanel');
 observer.observe(sectionPanel); 
+
+const titleSec = document.querySelectorAll('.titleSec');
+titleSec.forEach(title => observer.observe(title));
+
+const itemBlog = document.querySelectorAll('.itemBlog');
+itemBlog.forEach(item => observer.observe(item));
+
+const button = document.querySelectorAll('.buttonBlog');
+button.forEach(button => observer.observe(button));
+
+const ubicaciones = document.querySelectorAll('.ubicacion');
+ubicaciones.forEach(section => observer.observe(section));
+
+const catalogo = document.querySelectorAll('.catalogo');
+catalogo.forEach(section => observer.observe(section));

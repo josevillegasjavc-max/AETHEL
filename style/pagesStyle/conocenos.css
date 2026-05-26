@@ -1,11 +1,6 @@
 .containConocenos .containInformation {
     box-shadow: var(--shadow-md);
-    border-radius: 6rem;
     margin-bottom: 8rem;
-}
-
-.containConocenos .containInformation:last-child {
-    margin-bottom: 6rem;
 }
 
 .containConocenos .information {
@@ -15,17 +10,21 @@
     gap: 1rem;
 }
 
-.containConocenos .imgInformation {
+.containConocenos .containInformation .information .title {
+    margin-bottom: 2rem;
+}
+
+.containConocenos .containInformation .imgInformation {
     border-radius: 6rem;
     border: none;
 }
 
-.containConocenos .information .title {
-    margin-bottom: 2rem;
-}
-
 .containInformation:nth-child(3) {
     flex-direction: row-reverse;
+}
+
+.containInformation:nth-child(4) {
+    margin-bottom: 3.2rem;
 }
 
 .information .list {

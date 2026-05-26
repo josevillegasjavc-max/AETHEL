@@ -1,9 +1,9 @@
 .greenBody {
-    background: -webkit-linear-gradient(60deg, var(--primary-light) 10%, var(--primary-light) 90%);
+    background: var(--primary-light);
 }
 
 .titleHead {
-    min-height: 40rem;
+    min-height: 34rem;
     width: 100%;
 
     display: flex;
@@ -12,14 +12,22 @@
 }
 
 .titleHead .title {
-    text-shadow: 8px 5px 19px rgba(95, 92, 92, 0.164);
-    text-align: center;
-    line-height: 10rem;
-    font-size: 7.5rem;
+    text-shadow: 5px 7px 10px rgba(112, 112, 112, 0.336);
     letter-spacing: 0.2rem;
+    line-height: 10rem;
 
-    background: 
-    -webkit-repeating-linear-gradient(90deg, var(--bg-color) 90%, var(--bg-color) 91%);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    border-right: 1.2rem solid var(--bg-color);
+    border-left: 1.2rem solid var(--bg-color);
+    box-shadow: var(--shadow-md);
+    border-radius: 2rem;
+    width: fit-content;
+    text-align: center;
+    font-size: 6rem;
+    padding: 0 7rem;   
+    margin: 0 auto;
+
+    max-width: 90rem;
+    background: -webkit-linear-gradient(50deg, var(--primary-color) 15%, var(--primary-light) 50%);
+    -webkit-text-fill-color: var(--bg-color);
+    color: var(--bg-color);
 }

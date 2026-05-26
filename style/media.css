@@ -9,7 +9,7 @@
     .containInformation:nth-child(3){
         flex-direction: column;
     }
-
+    
     .information {
         width: 100%;
         margin: 0 auto;
@@ -195,5 +195,22 @@
         to {
             transform: translateX(0rem);
         }
+    }
+
+    .titleHead .title {
+        border-bottom: 1.2rem solid var(--bg-color); 
+        border-radius:0 0 6rem 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .containPaquetes .titleHead .title  {
+        margin: 0rem auto;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (width <= 440px) {
+    .panelButton img{
+        display: none;
     }
 }
