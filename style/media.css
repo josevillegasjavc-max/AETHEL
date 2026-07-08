@@ -1,4 +1,131 @@
+@media screen and (width <= 945px) {
+    
+    /* Media para header desplegable */
+    header {
+        justify-content: space-between;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .panelNav {
+        background: var(--bg-color);
+        padding: 1.2rem 2rem;
+
+        animation: navAnimation 0.4s ease-in-out normal forwards;
+    }
+
+    .panelButton {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        color: var(--primary-color);
+        width: min-content;
+        font-size: 3rem;
+        cursor: pointer;
+        border: none;
+    }
+
+    .itemNavHeader {
+        font-size: 1.5rem;
+        display: none;
+        width: 100%;
+    }
+
+    .itemNavHeader img{
+        scale: 0.9;
+    }
+
+    .panelNavActive {
+        border-bottom: 1px solid var(--primary-color);
+        border-left: 1px solid var(--primary-color);
+        border-radius: 0 0 1rem 1rem ;
+        box-shadow: var(--shadow-md);
+        background: var(--bg-color);
+
+        flex-direction: column;
+        height: max-content;
+        padding: 1rem;
+        padding-top: 0.4rem;
+        gap: 1.5rem;
+
+        animation: navAnimationA 0.4s ease-in-out normal forwards;
+    }
+
+    .activeMedia {
+        display: inline-flex;
+    }
+
+    @keyframes navAnimationA {
+        from {
+            opacity: 0;
+            transform: translateX(10rem);
+        }
+        to {
+            transform: translateX(0rem);
+            opacity: 1;
+        }
+    }
+
+    @keyframes navAnimation {
+        from {
+            transform: translateX(-5rem);            
+        }
+        to {
+            transform: translateX(0rem);
+        }
+    }
+
+    .titleHead {
+        min-height: 4rem;
+        align-items: start;
+    }
+
+    .titleHead .title {
+        border-bottom: 1.2rem solid var(--bg-color); 
+        border-radius:0 0 6rem 6rem;
+        padding: 0 2rem;  
+        width: 100%;
+        margin: 0rem auto;
+        margin-bottom: 6rem;    
+    }
+
+    .containPaquetes .titleHead .title  {
+        margin: 0rem auto;
+        margin-bottom: 6rem;
+    }
+
+    .sectionPanel {
+        gap: 0.5rem;
+    }
+
+    .sectionServices .service .serviceTitle {
+        padding: 1rem 5rem 0.5rem 5rem;
+        text-align: center; 
+    } 
+
+    .sectionServices .service .serviceInfo {
+        flex-direction: column;
+    }
+
+    .sectionServices .service .serviceInfo { 
+        padding: 4rem 5rem;
+        gap: 1rem
+    } 
+
+    .sectionServices .service .serviceInfo img {
+        height: auto;
+        width: 90%;
+    } 
+
+    .sectionServices .service .serviceInfo .textInformationService {   
+        height: 100%;
+        width:85%;
+    } 
+}
+
 @media screen and (width <= 800px) {
+
     /* media information*/
     .containInformation {
         display: flex;
@@ -6,7 +133,7 @@
         flex-direction: column;
     }
 
-    .containInformation:nth-child(3){
+    .containConocenos  .containInformation:nth-child(3), .containConocenos .containInformation:nth-child(5)  {
         flex-direction: column;
     }
     
@@ -115,102 +242,62 @@
     }
 
     .ubicacion {
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
     }
 }
 
-@media screen and (width <= 945px) {
-    /* Media para header desplegable*/
-    header {
-        justify-content: space-between;
-        padding: 0;
-        gap: 1rem;
-    }
+@media screen and (width <= 614px) {
 
-    .panelNav {
-        background: var(--bg-color);
-        padding: 1.2rem 2rem;
-
-        animation: navAnimation 0.4s ease-in-out normal forwards;
-    }
-
-    .panelButton {
+    .containBuscador {
         display: flex;
         align-items: center;
-        gap: 1rem;
-
-        color: var(--primary-color);
-        width: min-content;
-        font-size: 3rem;
-        cursor: pointer;
-        border: none;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 2rem;
+        gap: 2rem;
     }
 
-    .itemNavHeader {
-        font-size: 1.5rem;
-        display: none;
+    .buscador {
+        width: 90%;
+    }
+
+    .containBuscador .button {
+        min-width: 20rem;
+    }   
+
+    .itemCatalogo {
+        max-width: 45rem; 
+        height: 32rem;
         width: 100%;
     }
 
-    .itemNavHeader img{
-        scale: 0.9;
-    }
-
-    .panelNavActive {
-        border-bottom: 1px solid var(--primary-color);
-        border-left: 1px solid var(--primary-color);
-        border-radius: 0 0 1rem 1rem ;
-        box-shadow: var(--shadow-md);
-        background: var(--bg-color);
-
-        flex-direction: column;
-        height: max-content;
-        padding: 1rem;
-        padding-top: 0.4rem;
-        gap: 1.5rem;
-
-        animation: navAnimationA 0.4s ease-in-out normal forwards;
-    }
-
-    .activeMedia {
-        display: inline-flex;
-    }
-
-    @keyframes navAnimationA {
-        from {
-            opacity: 0;
-            transform: translateX(10rem);
-        }
-        to {
-            transform: translateX(0rem);
-            opacity: 1;
-        }
-    }
-
-    @keyframes navAnimation {
-        from {
-            transform: translateX(-5rem);            
-        }
-        to {
-            transform: translateX(0rem);
-        }
-    }
-
-    .titleHead .title {
-        border-bottom: 1.2rem solid var(--bg-color); 
-        border-radius:0 0 6rem 6rem;
-        margin-bottom: 4rem;
-    }
-
-    .containPaquetes .titleHead .title  {
-        margin: 0rem auto;
-        margin-bottom: 4rem;
+    .titleItemCatalogo {
+        font-size: 2rem;
     }
 }
 
-@media screen and (width <= 440px) {
+@media screen and (width <= 500px) {
     .panelButton img{
         display: none;
+    }
+
+    .titleHead .title {
+        line-height: 8rem;
+        font-size: 4.5rem;    
+    }
+}
+
+@media screen and (width <= 395px) {
+    .titleHead .title {
+        line-height: 6.5rem;
+        font-size: 3.8rem;    
+    }
+}
+
+@media screen and (width <= 340px) {
+    .titleHead .title {
+        line-height: 6.5rem;
+        font-size: 3rem;    
     }
 }

@@ -16,6 +16,10 @@
     gap: 3.2rem 3rem ;
 }
 
+.catalogoEspecialidades .containItem a  {
+    color: var(--text-main);
+}
+
 .catalogoEspecialidades .containItem .item {
     border: 2px solid transparent;
     box-shadow: var(--shadow-md);

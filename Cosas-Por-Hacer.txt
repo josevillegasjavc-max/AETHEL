@@ -1,0 +1,5 @@
+5. realizar Apartado de Blog
+
+6. Verificar Diseños Responsivos
+7. Verificar La Lentitud de Carga
+8. Arreglar Slider

@@ -49,7 +49,7 @@
 
 .containCita .button {
     border: 3px solid var(--primary-color);
-    background: var(--primary-color);
+    background: var(--primary-light);
     letter-spacing: 0.1rem;
     font-size: 2rem;
     font-weight: bold;

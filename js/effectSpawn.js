@@ -4,7 +4,7 @@ if (history.scrollRestoration) {
 
 const observerOptions = {
     root: null,     // usa el viewport
-    threshold: 0.2  // se activa cuando el 20% de la tarjeta es visible
+    threshold: 0.1  // se activa cuando el 20% de la tarjeta es visible
 };
 
 const observer = new IntersectionObserver((entries) => {

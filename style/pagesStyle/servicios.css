@@ -1,0 +1,153 @@
+.containServicios .titleHead {
+    min-height: 32rem;
+}
+
+.sectionServices {
+    box-shadow: var(--shadow-md);
+    background: var(--bg-color);
+    margin-bottom: 3.5rem;
+    border-radius: 5rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+
+    min-height: 70rem;
+    height: auto;
+    width: 100%;
+}
+
+.sectionServices .service {
+    border-radius: 7rem 7rem 3rem 3rem;
+    box-shadow: var(--shadow-md);
+    min-height: 53rem;
+}
+
+.sectionServices .service .serviceTitle {
+    border-radius: 3rem 3rem 1rem 1rem;
+    padding: 1rem 5rem 0.5rem 12rem;
+    box-shadow: var(--shadow-md);
+}
+
+.sectionServices .service .serviceTitle .title {
+    -webkit-text-fill-color: var(--bg-color);
+    text-shadow: var(--shadow-md);
+}
+
+.sectionServices .service .serviceInfo {
+    padding: 4rem 6rem;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+} 
+
+.sectionServices .service .serviceInfo img {
+    box-shadow: var(--shadow-md);
+    border-radius: 4rem;
+    height: 100%;
+    width: 47%;
+} 
+
+.sectionServices .service .serviceInfo .textInformationService {   
+    height: 100%;
+    width: 53%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    gap: 0;
+
+    transition: all 0.8s ease-out;
+} 
+
+.sectionServices .service .serviceInfo div h4 { 
+    margin: 2.5rem 0rem 2rem 0rem;
+    text-align: center;
+    font-size: 3.4rem;
+} 
+
+.sectionServices .service .serviceInfo div p { 
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    width: 100%; 
+} 
+
+/* Verde */
+.sectionServices .service:nth-child(1) { 
+    background: #4ae98f44;
+}
+
+.sectionServices .service:nth-child(1) .serviceTitle {
+    background: linear-gradient(0deg, #1f7544, #45b074);
+}
+
+.sectionServices .service:nth-child(1) .serviceInfo div h4 {
+    background: -webkit-repeating-linear-gradient(var(--primary-dark), var(--primary-color));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Azul */
+.sectionServices .service:nth-child(2) { 
+    background: #408aeb44;
+}
+
+.sectionServices .service:nth-child(2) .serviceTitle {
+    background: linear-gradient(0deg, #314970, #3b82f6);
+}
+.sectionServices .service:nth-child(2) .serviceInfo div h4 {
+    background: -webkit-linear-gradient(45deg, #263449, #3b82f6);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Verde Palido*/
+.sectionServices .service:nth-child(3) { 
+    background: #ace69662; 
+}
+
+.sectionServices .service:nth-child(3) .serviceTitle {
+    background: linear-gradient(0deg, #398036, #79c25d);
+}
+
+.sectionServices .service:nth-child(3) .serviceInfo div h4 {
+    background: -webkit-linear-gradient(45deg, #41913e, #83c768);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Veis */
+.sectionServices .service:nth-child(4) { 
+    background: rgba(226, 211, 189, 0.45);
+}
+
+.sectionServices .service:nth-child(4) .serviceTitle {
+    background: linear-gradient(0deg, #7c6441, #b59b73); 
+}
+
+.sectionServices .service:nth-child(4) .serviceInfo div h4 {
+    background: -webkit-linear-gradient(45deg, #7c6441, #b59b73);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Gris */
+.sectionServices .service:nth-child(5) { 
+    background: #5a698044; 
+}
+
+.sectionServices .service:nth-child(5) .serviceTitle {
+    background: linear-gradient(0deg, #334155, #64748b);
+}
+
+.sectionServices .service:nth-child(5) .serviceInfo div h4 {
+    background: -webkit-linear-gradient(45deg, #334155, #64748b);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
