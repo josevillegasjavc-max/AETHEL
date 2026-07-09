@@ -14,6 +14,7 @@
 @import url("./pagesStyle/especialidades.css");
 @import url("./pagesStyle/servicios.css");
 @import url("./pagesStyle/cita.css");
+@import url("./pagesStyle/blogArticle.css");
 
 /* Componentes reutilizables */
 @import url('./components//blog.css');

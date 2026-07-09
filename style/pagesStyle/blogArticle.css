@@ -1,0 +1,20 @@
+.containArticleBlog .containInformation { 
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: var(--shadow-md);
+    min-height: 56rem;
+}
+
+.containArticleBlog .information { 
+    border-radius: 0 0 0 2rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.containArticleBlog .containInformation .information .title {
+    margin-bottom: 2rem;
+}
+
+.containArticleBlog .containInformation .imgInformation { 
+    border-radius: 2rem 0rem 2rem 2rem;
+    border: none;
+}

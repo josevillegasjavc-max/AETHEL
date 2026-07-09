@@ -20,6 +20,12 @@ const observer = new IntersectionObserver((entries) => {
 const cita = document.querySelectorAll('.containCita');
 cita.forEach(section => observer.observe(section));
 
+const itemBlog = document.querySelectorAll('.itemBlog');
+itemBlog.forEach(item => observer.observe(item));
+
+const button = document.querySelectorAll('.buttonBlog');
+button.forEach(button => observer.observe(button));
+
 const information = document.querySelectorAll('.information');
 information.forEach(section => observer.observe(section));
 
@@ -37,12 +43,6 @@ observer.observe(sectionPanel);
 
 const titleSec = document.querySelectorAll('.titleSec');
 titleSec.forEach(title => observer.observe(title));
-
-const itemBlog = document.querySelectorAll('.itemBlog');
-itemBlog.forEach(item => observer.observe(item));
-
-const button = document.querySelectorAll('.buttonBlog');
-button.forEach(button => observer.observe(button));
 
 const ubicaciones = document.querySelectorAll('.ubicacion');
 ubicaciones.forEach(section => observer.observe(section));

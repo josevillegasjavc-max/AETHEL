@@ -120,7 +120,7 @@
 
     .sectionServices .service .serviceInfo .textInformationService {   
         height: 100%;
-        width:85%;
+        width:95%;
     } 
 }
 
@@ -245,10 +245,16 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    .containArticleBlog .containInformation .imgInformation { 
+        margin-bottom: 2.8rem;
+        border-radius: 2rem; 
+        max-width: 50rem;
+        width: 80%; 
+    }
 }
 
 @media screen and (width <= 614px) {
-
     .containBuscador {
         display: flex;
         align-items: center;
@@ -299,5 +305,22 @@
     .titleHead .title {
         line-height: 6.5rem;
         font-size: 3rem;    
+    }
+}
+
+@media screen and ( 448px <= width <= 644px) {
+
+    .sectionBlog {
+        gap: 1rem;
+    }
+
+    .itemBlog {
+        min-height: 40rem;
+        width: 22rem;
+    }
+    
+    .imgItemBlog {
+        height: 15rem;
+        width: 100%;
     }
 }
