@@ -1,21 +1,45 @@
 const buscador = document.querySelector(".buscador");
-const items = document.querySelectorAll(".itemCatalogo");
+const itemCatalogo = document.querySelectorAll(".itemCatalogo");
 
-buscador.addEventListener('keydown', () => {
-    if (event.key === "Enter") {
-        const filtro = buscador.value.toLowerCase();
+if (buscador && itemCatalogo.length > 0) {
+    buscador.addEventListener('keydown', (event) => {
+        if (event.key === "Enter") {
+            const filtro = buscador.value.toLowerCase();
 
-        items.forEach(item => {
-        const texto = item.textContent.toLowerCase();
+            itemCatalogo.forEach(item => {
+                const texto = item.textContent.toLowerCase();
 
-        if (texto.includes(filtro)) {
-            item.style.display = ''; 
+                if (texto.includes(filtro)) {
+                    item.style.display = ''; 
+                }
+
+                else {
+                    item.style.display = 'none'; 
+                }
+            });
         }
+    });
+}
 
-        else {
-            item.style.display = 'none'; 
+const items = document.querySelectorAll(".itemA");
+
+if (buscador && items.length  > 0) {
+    buscador.addEventListener('keydown', (event) => {
+        if (event.key === "Enter") {
+            const filtro = buscador.value.toLowerCase();
+
+            items.forEach(item => {
+            const texto = item.textContent.toLowerCase();
+
+            if (texto.includes(filtro)) {
+                item.style.display = ''; 
+            }
+
+            else {
+                item.style.display = 'none'; 
+            }
+
+            });
         }
-
-        });
-    }
-});
+    });
+}
